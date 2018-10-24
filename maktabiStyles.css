@@ -75,3 +75,17 @@ h2{font-size:1.4em;}
     height: 15px;
     background-repeat: no-repeat;
 }
+
+.more {border-radius: 15px;
+       border: 2px solid darkgray;
+       background-color: gray;
+       display: block;
+       width: 200px;
+       text-decoration: none;
+       color: white;
+       text-align: center;
+}
+
+.more:hover {background-color: white;
+             color: gray;
+}

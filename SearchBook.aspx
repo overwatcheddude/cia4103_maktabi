@@ -44,7 +44,7 @@
                          <ajaxToolkit:Rating ID="Rating1" runat="server" ReadOnly="True" FilledStarCssClass="filled" EmptyStarCssClass="empty" StarCssClass="filled" WaitingStarCssClass="filled" BehaviorID="Rating1_RatingExtender" CurrentRating='<%# Eval("avgRating") %>'>
                         </ajaxToolkit:Rating>
                          Votes (<asp:Literal ID="Literal5" runat="server" Text='<%# Eval("Votes") %>'></asp:Literal>)<br />
-                        <asp:HyperLink ID="HyperLink4" runat="server" NavigateUrl="BooksDetails.aspx">More Details...</asp:HyperLink>
+                        <asp:HyperLink ID="HyperLink4" runat="server" NavigateUrl='<%# "BookDetails.aspx?id=" + Eval("BookId") %>' CssClass="more">More Details...</asp:HyperLink>
                     </td>
                 </tr>
             </table>
