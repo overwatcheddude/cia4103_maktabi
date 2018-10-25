@@ -26,7 +26,7 @@ public class BookReview
         SqlCommand cmd = new SqlCommand(sql, conn);
         cmd.Parameters.AddWithValue("username", this.UserName);
         cmd.Parameters.AddWithValue("bookid", this.BookID);
-         cmd.Parameters.AddWithValue("comment", this.Comment);
+        cmd.Parameters.AddWithValue("comment", this.Comment);
         cmd.Parameters.AddWithValue("rating", this.Rating);
        
 
